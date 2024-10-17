@@ -3,13 +3,6 @@
 
 /* GENERAL STYLES */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
 body {
   font-family: "Poppins", sans-serif;
   color: #333;
@@ -21,7 +14,11 @@ html{
   scroll-behavior: smooth;
 }
 
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px;
+}
 /* HEADER AND NAV STYLES */
 
 header{
@@ -88,14 +85,13 @@ section/*#frontpage, #form, #carousel, #table*/{
   text-align: center; 
   width: 80vw;
   height: 85vh;
-  margin: 20px 0;
-  padding: 20px; 
+  margin: 10px 0;
+  padding: 10px; 
   background-color: white; 
   border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   scroll-margin-top: 160px; 
   padding-top:1vh;
-
   box-sizing: border-box;
   font-size: 1rem;
 }
@@ -125,8 +121,6 @@ form{
   border-radius: 5px;
   background-color: white; 
 }
-
-
 
 input[type="text"], input[type="email"], textarea, select {
   width: 90%;
@@ -159,7 +153,6 @@ input[type="submit"]:hover {
   overflow: hidden;
 }
 
-
 .carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -177,7 +170,6 @@ input[type="submit"]:hover {
   opacity: 1;
   transition: opacity 0.5s;
 }
-
 
 button.prev, button.next{
   position: absolute;
@@ -221,6 +213,13 @@ tbody tr:hover {
   background-color: #f1f1f1;
 } 
 
+
+/*RANDOM PIC */
+.img-responsive {
+  max-width: 70%;
+  height: 70%;
+}
+
 /*FOOTER*/
 
 footer{
@@ -228,7 +227,7 @@ footer{
   font-size: 24px;
   color: black;
   height: 10vh;
-  margin: 0 1rem;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,18 +235,62 @@ footer{
 
 /*RESPONSIIVISUUS*/
 @media (max-width: 768px) {
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 90px;
+  }
+
+  section/*#frontpage, #form, #carousel, #table*/{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 80vw;
+    height: 50vh;
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 160px; 
+    padding-top:1vh;
+    box-sizing: border-box;
+    font-size: 0.5rem;
+  }
+
+  nav ul li a{
+    color: black;
+    font-size: 0.5rem;
+    text-decoration: none;
+    }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 5px;
+    text-align: left;
+  }
+
+  form {
+    font-size: 0.5rem;
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
   .container {
       padding: 15px;
       width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-      padding: 10px;
-  }
-
-  h1 {
-      font-size: 1.5em;
   }
 }
