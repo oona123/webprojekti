@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Oonan portfolio, jossa esitellään HTML, CSS ja JavaScript -osaamista." />
+    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, Oona Saarikoski" />
+    <title>Oonan Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container"></div>
+    <header class="header">
+        
+            <div class="logo">Oona Saarikoski</div>
+            <nav id="nav-links">
+            <ul>
+                <li><a href="index.html#frontpage">Etusivu</a></li>
+                <li><a href="index.html#form">Lomake</a></li>
+                <li><a href="index.html#carousel">Karuselli</a></li>                
+                <li><a href="index.html#table">Taulukko</a></li>
+            </ul>
+            </nav>
+           
+    </header>
+    <main class="container">
+        <section id="frontpage">
+            <h2>Etusivu</h2>
+            <p id="muokattavaTeksti">
+                <a href="https://oamk.fi/" target="_blank" rel="noopener noreferrer">Oamk</a>
+                Tämä on Web-sovellusten perusteet kurssin lopputyö. Kurssin sisältöön kuuluu:</p>
+            <ul id="dynamicList">
+            </ul>
+            <button id="changeText">Muuta Tekstiä</button>
+        </section>
+            <section id="form">
+                <h3>Lomake</h3>
+                <form id="myForm" action="submit.php" method="post">
+                    <fieldset>
+                        <legend>Nimi:</legend>
+                        <input type="text" id="name" name="name" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sähköposti:</legend>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Viesti:</legend>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Valitse:</legend>
+                        <select id="valinta" name="valinta">
+                        <option value="option1">Valinta1</option>
+                        <option value="option2">Valinta2</option>
+                        <option value="option3">Valinta3</option>
+                    </fieldset>
+                    </select>
+                    <fieldset>
+                        <legend>Toinen valinta:</legend>
+                        <label for="option1">
+                            <input type="checkbox" id="option4" name="option[]" value="option1"> Valinta1
+                        </label>
+                        <label for="option2">
+                            <input type="checkbox" id="option5" name="option[]" value="option2"> Valinta2
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Kolmas valinta:</legend>
+                        <input type="radio" name="option7" value="option1"> Valinta1
+                        <input type="radio" name="option8" value="option2"> Valinta2
+                    </fieldset>
+                    <input type="submit" value="Lähetä">
+                </form>
+            </section>
+            <section id="carousel">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="assets/kuvapankki1.jpg" alt="Kuva 1">
+                        <img src="assets/kuvapankki2.jpg" alt="Kuva 2">
+                        <img src="assets/kuvapankki3.jpg" alt="Kuva 3">
+                        <img src="assets/kuvapankki4.jpg" alt="Kuva 4">
+                        <img src="assets/kuvapankki5.jpg" alt="Kuva 5">
+                        <img src="assets/kuvapankki6.jpg" alt="Kuva 6">
+                        <img src="assets/kuvapankki7.jpg" alt="Kuva 7">
+                        <img src="assets/kuvapankki8.jpg" alt="Kuva 8">
+                        <img src="assets/kuvapankki9.jpg" alt="Kuva 9">
+                        <img src="assets/kuvapankki10.jpg" alt="Kuva 10">
+                        <img src="assets/kuvapankki11.jpg" alt="Kuva 11">
+                        <img src="assets/kuvapankki12.jpg" alt="Kuva 12">
+                        <img src="assets/nevada.png" alt="Kuva 13">
+                    </div>
+                    <button class="prev">Edellinen</button>
+                    <button class="next">Seuraava</button>
+                </div>               
+            </section>
+            <section id="table">
+                <h3>Taulukko</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aihe</th>
+                            <th>Kuvaus</th>
+                            <th>Käyttötarkoitus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>HyperText Markup Language (HTML) on merkintäkieli, jota käytetään verkkosivustojen rakenteen ja sisällön määrittämiseen.</td>
+                            <td>Verkkosivujen rakenne ja sisältö, kuten otsikot, kappaleet, listat, kuvat ja lomakkeet.</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Cascading Style Sheets (CSS) on tyyliarkkikieli, jolla määritellään verkkosivujen ulkoasu, kuten värit, fontit ja layoutit.</td>
+                            <td>Verkkosivujen ulkoasun ja tyylin muokkaaminen.</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>JavaScript on ohjelmointikieli, joka mahdollistaa verkkosivujen dynaamisen ja vuorovaikutteisen käyttäytymisen.</td>
+                            <td>Käytetään interaktiivisten elementtien luomiseen.</td>
+                        </tr>
+                        <tr>
+                            <td>Asynkroniset Operaatiot</td>
+                            <td>Asynkroniset operaatiot mahdollistavat koodin suorittamisen taustalla.</td>
+                            <td>Käytetään esimerkiksi tietojen hakemiseen palvelimelta.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <h1>Random kuva</h1>
+        <div id="image-container"></div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+        <p>&#169; Oona Saarikoski</p>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

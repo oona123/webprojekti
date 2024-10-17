@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* GENERAL STYLES */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  padding-top: 150px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* HEADER AND NAV STYLES */
+
+header{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 1rem; 
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  right: 0; 
+  z-index: 1000; 
+  margin-top: 0;
+}
+
+header .logo{
+font-family: 'Alex Brush', cursive;
+font-size: 2rem;
+color: black;
+}
+header .logo:hover{
+  cursor:default;
+}
+nav ul{
+  margin-top: 1rem; 
+  display: flex;
+  justify-content: center; 
+  list-style: none; 
+  padding: 0; 
+  gap: 2rem;
+}
+
+nav ul li a{
+color: black;
+font-size: 1.2rem;
+text-decoration: none;
+}
+
+nav ul li a:hover{
+color: gray;
+text-decoration: underline;
+text-underline-offset: 0,5rem;
+text-decoration-color:rgb(181,181,181);
+}
+
+/*MAIN STYLES*/
+
+main{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+section/*#frontpage, #form, #carousel, #table*/{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  width: 80vw;
+  height: 85vh;
+  margin: 20px 0;
+  padding: 20px; 
+  background-color: white; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 160px; 
+  padding-top:1vh;
+
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+#changeText{
+  background-color: #4f4f4f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#changeText:hover{
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* FORM STYLES */
+
+form{
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; 
+}
+
+
+
+input[type="text"], input[type="email"], textarea, select {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"]{
+  background-color: #4f4f4f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* CAROUSEL kuvat ja navigointi painikkeet */
+.carousel{
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 90%;
+}
+
+.carousel img {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-images img.active{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+button.prev, button.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+/* TABLE STYLES */
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+} 
+
+/*FOOTER*/
+
+footer{
+  font-family: 'Alex Brush', cursive;
+  font-size: 24px;
+  color: black;
+  height: 10vh;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*RESPONSIIVISUUS*/
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+}
