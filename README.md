@@ -36,3 +36,6 @@
 - Asynkronisen puhelun tiedot näkyvät verkkosivulla: näkyy kuva
 - Asynkronisten datan tehokas käyttö käyttökokemuksen parantamiseksi
 - Promise- TAI async/await -käsittely: rivi 68
+
+GitHub Pages:
+- https://oona123.github.io/webprojekti/
